@@ -5,3 +5,7 @@ This repository shares our wiki settings. There's no secret things, so feel free
 systemd
 -------
 This folder has somekind of systemd service and timer file for running wiki.
+
+etc
+---
+Includes SFS, jobrunner and other files.
