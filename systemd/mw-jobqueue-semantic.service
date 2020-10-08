@@ -1,0 +1,13 @@
+[Unit]
+Description=MediaWiki Job runner
+
+[Service]
+ExecStart=/opt/wiki/mwjobrunner-semantic
+Nice=10
+ProtectSystem=full
+User=http
+OOMScoreAdjust=200
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

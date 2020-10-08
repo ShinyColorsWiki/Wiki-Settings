@@ -1,0 +1,8 @@
+[Unit]
+Description=Refresh StopForumSpam filter for ShinyWiki
+
+[Service]
+Type=oneshot
+ExecStart=/opt/wiki/StopForumSpam/cron.sh
+User=http
+Group=http

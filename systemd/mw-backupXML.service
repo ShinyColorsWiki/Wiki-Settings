@@ -1,0 +1,8 @@
+[Unit]
+Description=Generate XML Dumps for ShinyWiki
+
+[Service]
+Type=oneshot
+ExecStart=/srv/http/wiki-backup/backup-xml.sh
+User=http
+Group=http

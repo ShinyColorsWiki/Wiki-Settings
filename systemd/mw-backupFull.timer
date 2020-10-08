@@ -1,0 +1,9 @@
+[Unit]
+Description=Generate Full Wiki Backup & upload to s3 for ShinyWiki
+
+[Timer]
+OnCalendar=Mon *-*-* 00:00:00 
+Persistent=true
+
+[Install] 
+WantedBy=timers.target

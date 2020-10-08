@@ -1,0 +1,8 @@
+[Unit]
+Description=Generate Sitemap for ShinyWiki
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/php /srv/http/wiki/w/maintenance/generateSitemap.php --memory-limit=50M --fspath=/srv/http/wiki/sitemap/ --identifier=shinywiki --urlpath=/sitemap/ --server=https://wiki.shinycolo.rs --compress=yes  2>&1
+User=http
+Group=http

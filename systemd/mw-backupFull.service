@@ -1,0 +1,8 @@
+[Unit]
+Description=Generate Full backup  upload to s3 for ShinyWiki
+
+[Service]
+Type=oneshot
+ExecStart=/srv/http/wiki-backup/backup.sh
+User=http
+Group=http

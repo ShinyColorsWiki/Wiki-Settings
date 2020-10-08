@@ -1,0 +1,9 @@
+[Unit]
+Description=Generate XML dumps for ShinyWiki
+
+[Timer]
+OnCalendar=*-*-* 00:00:00 
+Persistent=true
+
+[Install] 
+WantedBy=timers.target
